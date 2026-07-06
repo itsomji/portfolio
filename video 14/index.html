@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=dev, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div, span{color: rgb(52, 233, 236);
+           
+        }
+        h2{color: rgb(255, 230, 0);
+            font-size:50px;
+            
+        }
+        
+        
+ h1 {
+    text-align: center;
+    color: rgb(52, 233, 236);
+    }
+ h2 {
+    text-align: center;
+   
+    
+}       
+ h3 {
+    text-align: center;
+    color: rgb(34, 1, 250);
+    
+ } 
+    body{
+
+        background-image: url('23551.jpg')
+    }
+    
+    pre {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255);}
+    
+    .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+body {
+    /* तुम्हारी पुरानी इमेज का पाथ यहाँ रहेगा, बस उसके आगे हमने एक हल्का ब्लैक शेड जोड़ दिया है */
+     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* यह फॉन्ट साइट को तुरंत प्रोफेशनल लुक देगा */
+    color: #ffffff;
+}
+/* 1. पूरे पेज की सेटिंग और नया प्रोफेशनल फॉन्ट */
+body {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+    /* डेवलपर थीम के लिए सबसे बेस्ट और जेन्युइन फॉन्ट */
+   
+body {
+    font-family: 'Consolas', Monaco, monospace;
+}
+
+    color: #e0e0e0;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* सब कुछ स्क्रीन के सेंटर में अलाइन करेगा */
+}
+
+/* 2. नाम और फोटो वाले हिस्से को परफेक्ट सेट करना */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* कंटेंट को ज्यादा फैलने से रोकेगा */
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #00ffff; /* नीचे एक पतली डैश्ड लाइन */
+    padding-bottom: 15px;
+}
+
+.header-container h1 {
+    font-size: 55px;
+    color: #00ffff; /* टर्मिनल आसमानी रंग */
+    margin: 0;
+}
+
+.my-avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid #00ffff;
+    object-fit: cover;
+}
+
+/* 3. पूरे कंटेंट (Goals, Tech Stack) को एक नीट लेआउट में लाना */
+.main-content {
+    width: 100%;
+    max-width: 800px;
+    text-align: left; /* बॉक्स के अंदर का टेक्स्ट लेफ्ट से शुरू होगा */
+    line-height: 1.6; /* लाइनों के बीच सही गैप */
+}
+
+/* हेडिंग्स जैसे Goals को चमकाना */
+h2 {
+    color: #03ff0c; /* न्यॉन पिंक या अपनी पसंद का कोई रंग जो तुमने रखा हो */
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* लिस्ट और लाइन्स का फॉन्ट साइज़ सेट करना */
+p, li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    list-style-type: none; /* बुलेट डॉट्स हटाकर क्लीन लुक */
+}
+
+/* 4. लिंक्डइन लिंक को एक साधारण लेकिन प्रोफेशनल बटन बनाना */
+a {
+    color: #00ffff;
+    text-decoration: none;
+    border: 1px solid #00ffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: #00ffff;
+    color: #000000;
+}
+
+.my-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid cyan;
+    object-fit: cover;
+}
+
+
+
+ 
+    </style>
+</head>
+<body>
+     
+
+  <!-- नाम वाला हिस्सा -->
+<div class="header-container">
+    <h1><b>Omji@portfolio:~$</b></h1>
+    <img src="profile.jpg" alt="Saksham photo" class="my-avatar">
+</div>
+
+<!-- इसके नीचे की सारी लाइन्स को इस मुख्य बॉक्स में डाल दो -->
+<div class="main-content"><pre>
+Step 1: Learn HTML [SUCCESS]
+Step 2: Learn CSS [IN PROGRESS...]
+Mission: Building cool websites before my first day of college.
+Tech Stack: HTML5 🌐 | Learning CSS3 🎨
+Current Focus: Shifting from 'Hello World' to real-world code.
+Daily Goal: 1% better every day, building things that matter.
+Connect with me: Let's learn and grow together!</pre>
+
+<pre></pre>
+<b><H2>Goals</H2></b>
+<pre>Goal 1: Master Full-Stack Development (MERN/Next.js) 🌐
+Goal 2: Build high-performance applications and crack Hackathons 🏆
+Mindset: Turning failures into source code. Drop year over, hustle mode ON.
+Daily Routine: Coding, learning, breaking things, and fixing them before joining college. ⏳🚀
+</pre>
+
+<h3><a href="https://www.linkedin.com/in/omji-verma-ab599b41b/
+     ">🔗 LinkedIn</a></h3>
+
+<b><pre>© 2026 Omji | Built with HTML & CSS ❤️ </pre></b>
+    
+    <!-- यहाँ तुम्हारी सारी पुरानी लाइन्स, Goals, Tech Stack, लिंक्डइन लिंक आ जायेगा -->
+
+</div> <!-- यहाँ बंद कर दो फुटर से पहले -->
+    
+   
+
+    
+
+
+
+<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/07/06/07/20260706073340-VCMDMJ99.js" defer></script>
+       
+
+
+
+
+
+</body>
+</html>
