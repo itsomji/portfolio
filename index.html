@@ -2,206 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=dev, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        div, span{color: rgb(52, 233, 236);
-           
-        }
-        h2{color: rgb(255, 230, 0);
-            font-size:50px;
-            
-        }
-        
-        
- h1 {
-    text-align: center;
-    color: rgb(52, 233, 236);
-    }
- h2 {
-    text-align: center;
-   }
-
- h3 {
-    text-align: center;
-    color: rgb(34, 1, 250);
-    
- } 
-    body{
-
-        background-image: url('23551.jpg')
-    }
-    
-    pre {
-    text-align: center;
-    font-size: 18px;
-    color: rgb(255, 255, 255);}
-    
-    .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-body {
-    
-     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ffffff;
-}
-
-body {
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; */
-    
-   
-body {
-    font-family: 'Consolas', Monaco, monospace;
-}
-
-    color: #e0e0e0;
-    margin: 0;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 800px; 
-    margin-bottom: 30px;
-    border-bottom: 1px dashed #00ffff; 
-    padding-bottom: 15px;
-}
-
-.header-container h1 {
-    font-size: 55px;
-    color: #00ffff; 
-    margin: 0;
-}
-
-.my-avatar {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    border: 2px solid #00ffff;
-    object-fit: cover;
-}
-
-
-.main-content {
-    width: 100%;
-    max-width: 800px;
-    text-align: left; 
-    line-height: 1.6; 
-}
-
-
-h2 {
-    color: #03ff0c;
-    font-size: 40px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-
-p, li {
-    font-size: 16px;
-    margin-bottom: 10px;
-    list-style-type: none; 
-}
-
-
-a {
-    color: #00ffff;
-    text-decoration: none;
-    border: 1px solid #00ffff;
-    padding: 8px 16px;
-    border-radius: 4px;
-    display: inline-block;
-    margin-top: 20px;
-    transition: all 0.3s ease;
-}
-
-a:hover {
-    background: #00ffff;
-    color: #000000;
-}
-
-.my-avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid cyan;
-    object-fit: cover;
-}
-
-
-
- 
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omji | AI Engineer & Python Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-     
 
-  
-<div class="header-container">
-    <h1><b>Omji@portfolio:~$</b></h1>
-    <img src="profile.jpg" alt="Saksham photo" class="my-avatar">
-</div>
+    <!-- ==========================================
+         1. TOP NAVIGATION BAR
+         ========================================== -->
+    <nav class="navbar">
+        <div class="logo">Omji<span>.ai</span></div>
+        <div class="nav-links">
+            <a href="past.html">Past ↗</a>
+            <a href="present.html">Present ↗</a>
+            <a href="goals.html">Goals ↗</a>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+         2. HERO / PRESENT SECTION
+         ========================================== -->
+    <section class="hero" id="present">
+        
+        <!-- Profile Picture with Glow -->
+        <div class="profile-wrapper">
+            <img src="Saksham.jpg" alt="Omji" class="profile-img">
+        </div>
+
+        <!-- Headline & Bio -->
+        <div class="badge">🤖 Aspiring AI & Python Engineer</div>
+        <h1 class="hero-title">Hello, I'm <span class="highlight">Omji</span> 👋</h1>
+        <p class="hero-subtitle">Python Developer & AI / Machine Learning Enthusiast</p>
+        <p class="hero-desc">
+            Dual degree student pursuing <strong>BS in Data Science at IIT Madras</strong> & <strong>B.Tech in CSE (AI) at GLBITM</strong>. Passionate about building intelligent AI algorithms, Machine Learning models, and scalable Python solutions.
+        </p>
+
+        <!-- Action Buttons -->
+        <div class="btn-container">
+            <a href="https://youtube.com/@ghostgameryt72?si=MjTyX77E28v_cxLy" class="btn btn-youtube" target="_blank">
+                <span>▶ YouTube Channel</span>
+            </a>
+            <a href="https://lnkd.in/p/du8b7yTF" class="btn btn-linkedin" target="_blank">
+                <span>💼 LinkedIn Profile</span>
+            </a>
+            <a href="https://www.instagram.com/s.vgamerff2007?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==" class="btn btn-instagram" target="_blank">
+                <span>📸 Instagram</span>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         3. FUTURE / TECH STACK SECTION
+         ========================================== -->
+    <section class="section-box" id="future">
+        <h2>AI & Python Tech Stack ⚡</h2>
+        <p class="section-desc">Technologies and frameworks I work with</p>
+
+        <div class="cards-grid">
+            <div class="card-item">
+                <div class="card-icon">🐍</div>
+                <h3>Python Core & OOP</h3>
+                <p>Data structures, automation scripts, and backend algorithms.</p>
+            </div>
+            <div class="card-item">
+                <div class="card-icon">📊</div>
+                <h3>Data Science & Analytics</h3>
+                <p>NumPy, Pandas, Data Visualization with Matplotlib & Seaborn.</p>
+            </div>
+            <div class="card-item">
+                <div class="card-icon">🧠</div>
+                <h3>Machine Learning & AI</h3>
+                <p>Scikit-Learn, Neural Networks, Model Training & Deep Learning.</p>
+            </div>
+            <div class="card-item">
+                <div class="card-icon">🤖</div>
+                <h3>GenAI & LLMs</h3>
+                <p>Building intelligent chatbots, LangChain, and AI automation workflows.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         4. GOALS SECTION
+         ========================================== -->
 
 
-<div class="main-content"><pre>
-Step 1: Learn HTML [SUCCESS]
-Step 2: Learn CSS [IN PROGRESS...]
-Mission: Building cool websites before my first day of college.
-Tech Stack: HTML5 🌐 | Learning CSS3 🎨
-Current Focus: Shifting from 'Hello World' to real-world code.
-Daily Goal: 1% better every day, building things that matter.
-Connect with me: Let's learn and grow together!</pre>
-
-<pre></pre>
-<b><H2>Goals</H2></b>
-<pre>Goal 1: Master Full-Stack Development (MERN/Next.js) 🌐
-Goal 2: Build high-performance applications and crack Hackathons 🏆
-Mindset: Turning failures into source code. Drop year over, hustle mode ON.
-Daily Routine: Coding, learning, breaking things, and fixing them before joining college. ⏳🚀
-</pre>
-
-<h3><a href="https://www.linkedin.com/in/omji-verma-ab599b41b/
-     ">🔗 LinkedIn</a></h3>
-
-<b><pre>© 2026 Omji | Built with HTML & CSS ❤️ </pre></b>
-    
-    
-
-</div> 
-    
-   
-
-    
-
-
-
+    <!-- ==========================================
+         5. FOOTER
+         ========================================== -->
+    <footer>
+        <p>© 2026 Omji. Dual Degree Student (IIT M & GLBITM).</p>
+    </footer>
 <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2026/07/06/07/20260706073340-VCMDMJ99.js" defer></script>
        
-
-
-
 
 
 </body>
