@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omji | AI Engineer & Python Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         1. TOP NAVIGATION BAR
+         ========================================== -->
+    <nav class="navbar">
+        <div class="logo">Omji<span>.ai</span></div>
+        <div class="nav-links">
+            <a href="past.html">Past ↗</a>
+            <a href="present.html">Present ↗</a>
+            <a href="goals.html">Goals ↗</a>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+         2. HERO / PRESENT SECTION
+         ========================================== -->
+    <section class="hero" id="present">
+        
+        <!-- Dual Visual Showcase: Left (Profile Image) & Right (IIT Madras Certificate) -->
+        <div class="hero-visual-duo">
+            <!-- Left: Profile Picture with Glow -->
+            <div class="profile-wrapper">
+                <img src="Saksham.jpg" alt="Omji" class="profile-img">
+            </div>
+
+            <!-- Right: IIT Madras Certificate Card -->
+            <div class="hero-cert-card" onclick="openCertModal('certificate-iitm.png')" title="Click to view full certificate">
+                <div class="hero-cert-badge">🏅 IIT Madras Certified</div>
+                <img src="certificate-iitm.png" alt="IIT Madras Certificate - Intro to AI Assisted Coding" class="hero-cert-img">
+                <div class="hero-cert-overlay">
+                    <span class="hero-cert-view-btn">🔍 View Certificate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Headline & Bio -->
+        <div class="badge">🤖 Aspiring AI & Python Engineer</div>
+        <h1 class="hero-title">Hello, I'm <span class="highlight">Omji</span> 👋</h1>
+        <p class="hero-subtitle">Python Developer & AI / Machine Learning Enthusiast</p>
+        <p class="hero-desc">
+            Dual degree student pursuing <strong>BS in Data Science at IIT Madras</strong> & <strong>B.Tech in CSE (AI) at GLBITM</strong>. Passionate about building intelligent AI algorithms, Machine Learning models, and scalable Python solutions.
+        </p>
+
+        <!-- Action Buttons -->
+        <div class="btn-container">
+            <a href="https://youtube.com/@ghostgameryt72?si=MjTyX77E28v_cxLy" class="btn btn-youtube" target="_blank">
+                <span>▶ YouTube Channel</span>
+            </a>
+            <a href="https://lnkd.in/p/du8b7yTF" class="btn btn-linkedin" target="_blank">
+                <span>💼 LinkedIn Profile</span>
+            </a>
+            <a href="https://www.instagram.com/s.vgamerff2007?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==" class="btn btn-instagram" target="_blank">
+                <span>📸 Instagram</span>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+         3. FUTURE / TECH STACK SECTION
+         ========================================== -->
+    <section class="section-box" id="future">
+        <h2>AI & Python Tech Stack ⚡</h2>
+        <p class="section-desc">Technologies and frameworks I work with</p>
+
+        <div class="cards-grid">
+            <div class="card-item">
+                <div class="card-icon">🐍</div>
+                <h3>Python Core & OOP</h3>
+                <p>Data structures, automation scripts, and backend algorithms.</p>
+            </div>
+            <div class="card-item">
+                <div class="card-icon">📊</div>
+                <h3>Data Science & Analytics</h3>
+                <p>NumPy, Pandas, Data Visualization with Matplotlib & Seaborn.</p>
+            </div>
+            <div class="card-item">
+                <div class="card-icon">🧠</div>
+                <h3>Machine Learning & AI</h3>
+                <p>Scikit-Learn, Neural Networks, Model Training & Deep Learning.</p>
+            </div>
+            <div class="card-item">
+                <div class="card-icon">🤖</div>
+                <h3>GenAI & LLMs</h3>
+                <p>Building intelligent chatbots, LangChain, and AI automation workflows.</p>
+            </div>
+            <div class="card-item">
+                <div class="card-icon">🍃</div>
+                <h3>Backend & MongoDB</h3>
+                <p>NoSQL schema modeling, RESTful API architecture, and server-side data pipelines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         4. GOALS SECTION
+         ========================================== -->
+
+
+    <!-- ==========================================
+         5. FOOTER
+         ========================================== -->
+    <footer>
+        <p>© 2026 Omji. Dual Degree Student (IIT M & GLBITM).</p>
+    </footer>
+
+    <!-- ==========================================
+         CERTIFICATE PREVIEW MODAL LIGHTBOX
+         ========================================== -->
+    <div id="certModal" class="cert-modal" onclick="closeCertModal(event)">
+        <div class="cert-modal-dialog" onclick="event.stopPropagation()">
+            <div class="cert-modal-header">
+                <div class="cert-modal-title">
+                    <span>🏛️</span>
+                    <span>IIT Madras Certificate — Intro to AI Assisted Coding</span>
+                </div>
+                <button class="cert-modal-close" onclick="closeCertModal()" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="cert-modal-body">
+                <img id="certModalImg" src="certificate-iitm.png" alt="Certificate of Appreciation - IIT Madras">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Logic -->
+    <script>
+        function openCertModal(imgSrc) {
+            const modal = document.getElementById('certModal');
+            const img = document.getElementById('certModalImg');
+            if (imgSrc && img) img.src = imgSrc;
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeCertModal() {
+            const modal = document.getElementById('certModal');
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeCertModal();
+            }
+        });
+    </script>
+<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/07/06/07/20260706073340-VCMDMJ99.js" defer></script>
+       
+
+
+</body>
+</html>
