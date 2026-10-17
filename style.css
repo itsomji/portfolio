@@ -502,18 +502,18 @@ footer {
 }
 
 .hero-visual-duo .profile-img {
-    width: clamp(230px, 22vw, 275px);
-    height: clamp(230px, 22vw, 275px);
+    width: clamp(170px, 16vw, 215px);
+    height: clamp(170px, 16vw, 215px);
 }
 
 .hero-cert-card {
     position: relative;
-    width: clamp(280px, 30vw, 360px);
-    height: clamp(195px, 21vw, 250px);
+    width: clamp(340px, 38vw, 480px);
+    height: clamp(235px, 26vw, 330px);
     border-radius: 16px;
     overflow: hidden;
     border: 2px solid rgba(245, 158, 11, 0.45);
-    box-shadow: 0 0 30px rgba(245, 158, 11, 0.22);
+    box-shadow: 0 0 35px rgba(245, 158, 11, 0.25);
     cursor: pointer;
     transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
     background: #0b0f19;
@@ -534,16 +534,16 @@ footer {
 }
 
 .hero-cert-card:hover .hero-cert-img {
-    transform: scale(1.05);
+    transform: scale(1.04);
     filter: brightness(0.9);
 }
 
 .hero-cert-badge {
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 10px;
+    right: 10px;
     z-index: 2;
-    font-size: 0.74rem;
+    font-size: 0.72rem;
     font-weight: 700;
     color: #f59e0b;
     background: rgba(11, 15, 25, 0.92);
@@ -589,15 +589,15 @@ footer {
 
 @media (max-width: 640px) {
     .hero-visual-duo {
-        gap: 20px;
+        gap: 18px;
+    }
+    .hero-visual-duo .profile-img {
+        width: 170px;
+        height: 170px;
     }
     .hero-cert-card {
         width: 100%;
-        max-width: 320px;
-        height: 220px;
-    }
-    .profile-img {
-        width: 220px;
-        height: 220px;
+        max-width: 380px;
+        height: 260px;
     }
 }
